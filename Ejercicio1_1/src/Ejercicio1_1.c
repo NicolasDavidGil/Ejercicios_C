@@ -2,9 +2,9 @@
  ============================================================================
  Name        : 			Ejercicio1_1.c
  Author      : 		Gil Nicolas David
- Description : 	Ingresar dos n˙meros enteros, sumarlos y mostrar el resultado.
- Ejemplo	: 			Si ingresamos 3 y 2 el programa mostrar·: ìLa suma entre 3 y 2
- 	 	 	  	  	  	  	  	da como resultado 5î
+ Description : 	Ingresar dos n√∫meros enteros, sumarlos y mostrar el resultado.
+ Ejemplo	: 			Si ingresamos 3 y 2 el programa mostrar√°: ‚ÄúLa suma entre 3 y 2
+ 	 	 	  	  	  	  	  	da como resultado 5‚Äù
  ============================================================================
  */
 
@@ -15,10 +15,8 @@ int PedirNumero (char mensaje[]);
 
 int main(void)
 {
-	int numeroUno;
-	int numeroDos;
+	int numeroUno, numeroDos;
 	setbuf(stdout, NULL);
-
 	numeroUno = PedirNumero("Ingrese el primer numero: ");
 	numeroDos = PedirNumero("Ingrese el segundo numero: ");
 
@@ -30,9 +28,7 @@ int main(void)
 int PedirNumero (char mensaje[])
 {
 	int numeroIngresado;
-
 	printf("%s", mensaje);
 	scanf("%d", &numeroIngresado);
-
 	return numeroIngresado;
 }
